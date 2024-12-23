@@ -1,3 +1,5 @@
+#AWS sbmax002+241223@gamil.com
+
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import FileResponse
@@ -30,32 +32,3 @@ app.mount("/assets", StaticFiles(directory = "frontend/dist/assets")) #frontend/
 @app.get("/")
 def index():
     return FileResponse("frontend/dist/index.html")
-
-"""
-@app.get('/')
-def default():
-    return 'fuck'
-
-@app.get("/hello") #데코레이터. /hello라는 URL요청이 발생하면 해당 함수를 실행하여 결과를 리턴하라.
-def hello():
-    return {"message" : "hi pybo"}
-"""
-
-"""
-# 샘플 Python 스크립트입니다.
-
-# Ctrl+F5을(를) 눌러 실행하거나 내 코드로 바꿉니다.
-# 클래스, 파일, 도구 창, 액션 및 설정을 어디서나 검색하려면 Shift 두 번을(를) 누릅니다.
-
-
-def print_hi(name):
-    # 스크립트를 디버그하려면 하단 코드 줄의 중단점을 사용합니다.
-    print(f'Hi, {name}')  # 중단점을 전환하려면 F9을(를) 누릅니다.
-
-
-# 스크립트를 실행하려면 여백의 녹색 버튼을 누릅니다.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# https://www.jetbrains.com/help/pycharm/에서 PyCharm 도움말 참조
-"""
