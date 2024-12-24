@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from starlette.config import Config
 
 config = Config('.env')
-SQLALCHEMY_DATABASE_URL = config('SQLALCHEMY_DATABASE_RUL') #Config 클래스 이용, .env파일의 변수 읽기 가능
+SQLALCHEMY_DATABASE_URL = config('SQLALCHEMY_DATABASE_URL') #Config 클래스 이용, .env파일의 변수 읽기 가능
 """
 SQLALCHEMY_DATABASE_URL : Database access address
 sqlite:///./myapi.db : mean sqlite3 database file and save project root directory 
